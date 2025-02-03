@@ -19,4 +19,8 @@ steps:
       jdkArchitectureOption: 'x64'
       publishJUnitResults: true
       goals: 'package'
-
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '/home/vsts/work/1/s/target/'
+      Contents: '**/*.war'
+      TargetFolder: '$(build.artifactstagingdirectory)'
