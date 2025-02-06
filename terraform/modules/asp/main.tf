@@ -23,8 +23,8 @@ resource "azurerm_linux_web_app" "webapp" {
 
     application_stack {
       java_version        = "11"
-      java_server         = "TOMCAT"
-      java_server_version = "9.0"
+      java_server         = "JAVA"
+      java_server_version = "11.0"
     }
   }
 
